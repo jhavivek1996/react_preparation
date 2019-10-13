@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 //import Newcomp from './/components/newcomp';
 import faker from 'faker';
 import CommentDetail from './/components/CommentDetail';
+import ApprovalCard from './/components/ApprovalCard';
 
 const App = () =>
 {
    return (
        <div className="ui container comments">
+        <ApprovalCard/><br/><br/>
         
-
-          <CommentDetail 
+      <CommentDetail 
           author="Vivek"  
           message="Hii, I m Vivek" 
           time="1 PM" 
@@ -19,13 +20,14 @@ const App = () =>
           />
 
 
-          <CommentDetail
+        <CommentDetail
            author="Manish" 
            message="Hii, I m Manish" 
            time="2 PM"
            comments="Nice Blog Posts"
            avatar={faker.image.avatar()}
            />
+
           <CommentDetail
            author="Akhil" 
            message="Hii, I m Akhil" 
@@ -33,6 +35,7 @@ const App = () =>
            comments="Nice Blog Posts"
            avatar={faker.image.avatar()}
            />
+
           <CommentDetail 
           author="Gautam" 
           message="Hii, I m Gautam" 
@@ -40,6 +43,7 @@ const App = () =>
           comments="Nice Blog Posts"
           avatar={faker.image.avatar()}
           />
+
           <CommentDetail 
           author="Sohan" 
           message="Hii, I m Sohan" 
@@ -47,6 +51,7 @@ const App = () =>
           comments="Nice Blog Posts"
           avatar={faker.image.avatar()}
           />
+
           <CommentDetail 
           author="Gyan" 
           message="Hii, I m Gyan" 
@@ -54,9 +59,12 @@ const App = () =>
           comments="Nice Blog Posts"
           avatar={faker.image.avatar()}
           />
+          
        
        </div>
+       
    )
+
 }
 
 ReactDOM.render(
