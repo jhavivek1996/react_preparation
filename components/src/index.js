@@ -4,11 +4,18 @@ import ReactDOM from 'react-dom';
 import faker from 'faker';
 import CommentDetail from './/components/CommentDetail';
 import ApprovalCard from './/components/ApprovalCard';
+import Stopwatch from ".//components/stopwatch";
+import Countdown from ".//components/countdown";
+import './/components/bootstrap.min.css';
 
 const App = () =>
 {
    return (
+       
        <div className="ui container comments">
+           <Countdown/>
+       <Stopwatch/><br/><br/><br/><br/>
+
         <ApprovalCard/><br/><br/>
         
       <CommentDetail 
