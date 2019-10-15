@@ -44,13 +44,13 @@ let hours = ("0" + Math.floor(timerTime / 3600000)).slice(-2);
         {hours} : {minutes} : {seconds} : {centiseconds}
       </div>
       {this.state.timerOn === false && this.state.timerTime === 0 && (
-        <button onClick={this.startTimer} className="btn btn-success">Start</button>
+        <button onClick={this.startTimer} className="btn btn-success">Start</button> 
       )}
       {this.state.timerOn === true && (
         <button onClick={this.stopTimer} className="btn btn-warning">Stop</button>
       )}
       {this.state.timerOn === false && this.state.timerTime > 0 && (
-        <button onClick={this.startTimer} className="btn btn-info">Resume</button>
+        <button onClick={this.startTimer} className="btn btn-info">Resume &nbsp;</button>
       )}
       {this.state.timerOn === false && this.state.timerTime > 0 && (
         <button onClick={this.resetTimer} className="btn btn-danger">Reset</button>
