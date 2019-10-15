@@ -7,7 +7,7 @@ const ApprovalCard = () => {
        
        
       
-    <div className="card">
+    <div className="container-fluid jumbotron-fluid">
       <div className="content">
         {/* <img className="right floated mini ui image" alt={faker.image.avatar()}/> */}
         <div className="header">
